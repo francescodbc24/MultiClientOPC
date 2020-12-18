@@ -7,7 +7,7 @@ Client Application in .NET using WPF for reading OPC items with diferents protoc
 </p>
 
 ## Features
-- Support for Modbus,OPCDA
+- Support for Modbus,OPC DA,OPC UA
 - Subscription to items changes.
 - Save Items in JSON / XML
 
@@ -16,3 +16,5 @@ Client Application in .NET using WPF for reading OPC items with diferents protoc
   https://github.com/rossmann-engineering/EasyModbusTCP.NET
 - OPCDA (TitaniumAS.Opc.Client) 
   https://github.com/titanium-as/TitaniumAS.Opc.Client
+  -OPCUA
+  https://github.com/OPCFoundation
