@@ -18,11 +18,19 @@ namespace Client.ViewModels
 			{
 				isBool = true;
 				isNumeric = false;
-			}			
+				isReadOnly = true;
+			}
+			else if(Item.DataType == typeof(string))
+            {
+				isBool = false;
+				isNumeric = false;
+				isReadOnly = false;
+			}
 			else
 			{
 				isBool = false;
 				isNumeric = true;
+				isReadOnly = true;
 			}
 			}
 
@@ -42,6 +50,21 @@ namespace Client.ViewModels
 			}
 		}
 
+
+		/* IsReadOnly */
+		private bool _isReadOnly;
+		public bool isReadOnly
+		{
+			get
+			{
+				return _isReadOnly;
+			}
+			set
+			{
+				_isReadOnly = value;
+				OnPropertyChange();
+			}
+		}
 
 		/* IsBool */
 		private bool _isBool;
